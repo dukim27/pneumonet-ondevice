@@ -56,9 +56,9 @@ This project is related to previous replay-based continual learning work, but it
 
 | Aspect | PneumoX-CL | PneumoNet |
 |---|---|---|
-| Main goal | Improve replay diversity and robustness | Enable on-device continual learning |
+| Main goal | Improve replay diversity | Enable on-device continual learning |
 | Core method | Similarity-aware stratified replay | Dual-stage balanced buffer + lightweight CNN |
-| Buffer update | Cosine-similarity-based replacement | Per-class reservoir storage + balanced replay sampling |
+| Buffer update | Cosine-similarity-based replacement | Per-class reservoir storage + balanced replay |
 | Deployment focus | Continual learning robustness | Mobile / portable / point-of-care X-ray devices |
 | Main advantage | Higher replay diversity | Smaller, faster, lower-memory model |
 | Default buffer size | 2000 samples | 500 samples |
