@@ -125,16 +125,6 @@ This strategy helps preserve diagnostic knowledge from previous domains while re
 
 ---
 
-### 3. Dynamic Class-Weighted Loss
-
-Even with balanced replay, the combined batch of new and replayed samples may still be imbalanced. PneumoNet therefore applies a dynamic class-weighted loss.
-
-For each training batch, class weights are recomputed based on the current class distribution. Underrepresented classes receive higher weights, while majority classes receive lower weights.
-
-This helps prevent the model from overfitting to majority-class samples and improves stability across sequential domain shifts.
-
----
-
 ## Domain-Shifted PneumoniaMNIST Benchmark
 
 This repository uses **PneumoniaMNIST** from the **MedMNIST** collection. PneumoniaMNIST contains pediatric chest X-ray images for binary classification of normal versus pneumonia cases.
