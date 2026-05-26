@@ -229,27 +229,6 @@ A GPU runtime in Google Colab is recommended for practical execution time.
 
 ---
 
-## Paper-Default Experimental Setting
-
-The notebook is configured around the paper-default experimental workflow:
-
-| Setting | Value |
-|---|---|
-| Dataset | Domain-shifted PneumoniaMNIST |
-| Task | Binary pneumonia classification |
-| Continual learning setting | Domain-incremental learning |
-| Sequential domains | Base, LowDose, Portable, Anatomical, Institutional |
-| Backbone | Lightweight PneumoNet CNN |
-| Optimizer | Adam |
-| Learning rate | 0.001 |
-| Batch size | 32 |
-| Replay buffer size | 500 |
-| Epochs per domain | 50 |
-| Replay ratio | 1.0 |
-| Number of runs | 3 |
-
----
-
 ## Continual Learning Results
 
 PneumoNet achieves strong continual learning performance while maintaining a lightweight deployment profile.
